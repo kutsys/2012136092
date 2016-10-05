@@ -2,23 +2,25 @@
 
 # To enable the settings / commands in this file for login shells as well,
 # this file has to be sourced in /etc/profile.
-
+# 상호적 실행이 아니라면 아무것도 하지 않는다.
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
-
+# 각 커맨드가 끝나고 윈도우 사이즈를 체크하고, 만일 필요하다면 line과 columns의 values를 업데이트하라.
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
+#shopt는 shell option
+# 변수를 정의하라.
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
-
+# fancy한 프롬프트로 설정.(무색)
 # set a fancy prompt (non-color, overwrite the one in /etc/profile)
 PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 
 # Commented out, don't overwrite xterm -T "title" -n "icontitle" by default.
+# 이것이 xterm일 시, 제목을 user@host:dir로.
 # If this is an xterm set the title to user@host:dir
 #case "$TERM" in
 #xterm*|rxvt*)
