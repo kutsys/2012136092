@@ -18,7 +18,7 @@ int main() { // 여기서는 인자를 넣지 않고 직접 파일을 지정하�
 		exit(1);
 	} // 복사할 파일을 열 때 오류가 나면 출력한다.
 
-	if ( (out = fopen("file.out", "w")) == NULL ) { 
+	if ( (out = fopen("test_cp.mp4", "w")) == NULL ) { 
 		printf("Cannot Open  the  Write file\n");
 		exit(1);
 	} // 복사를 당할  파일을 열 때  오류가 나면 오류를 출력한다.
@@ -37,7 +37,7 @@ int main() { // 여기서는 인자를 넣지 않고 직접 파일을 지정하�
 	fclose(in);
 	fclose(out);
 	//파일 닫기
-	printf("%s -> %s \n","test.mp4", "file.out");
+	printf("%s -> %s \n","test.mp4", "test_cp.mp4");
 	printf("파일 복사 완료!\n");
 
 	exit(0);
