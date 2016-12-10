@@ -37,8 +37,8 @@ int main() { // 여기서는 인자를 넣지 않고 직접 파일을 지정하�
 	fclose(in);
 	fclose(out);
 	//파일 닫기
-	printf("%s -> %s \n","test.mp4", "test.out");
-	printf("파일 복사 완료!!");
+	printf("%s -> %s \n","test.mp4", "file.out");
+	printf("파일 복사 완료!\n");
 
 	exit(0);
 }
