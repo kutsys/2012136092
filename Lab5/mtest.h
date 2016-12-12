@@ -1,4 +1,4 @@
 #include<stdio.h>
-void foo();
-void boo();
-void bar();
+void InFoo();
+void InBoo();
+void InBar();
