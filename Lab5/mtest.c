@@ -1,3 +1,4 @@
+#include"mtest.h"
 #include<stdio.h>
 #include<stdlib.h>
 extern int InFoo(), InBoo(), InBar();
