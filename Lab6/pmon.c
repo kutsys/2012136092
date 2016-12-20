@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
-const char *path = "/home/wooyo/processMtr/ptest"; // 파일의 경로 설정
+const char *path = "/home/lsg/2012136092/Lab6/ptest"; // 파일의 경로 설정
 
 pid_t excuteChild(pid_t pid, char* exec) { // pid값과 실행파일 명령을 받아오도록
 	pid = fork(); // 자식프로세스 생성 및 PID 할당
